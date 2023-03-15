@@ -11,21 +11,25 @@
   <ion-list>
     <ion-item>
       <ion-label position="floating">First Name</ion-label>
-      <ion-input placeholder="Enter text"></ion-input>
+      <ion-input placeholder="Enter your first name" formControlName="name"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Surname</ion-label>
-      <ion-input placeholder="Enter text"></ion-input>
+      <ion-input placeholder="Enter your last name" formControlName="surname"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Phone Number</ion-label>
-      <ion-input type="tel" placeholder="Enter text"></ion-input>
+      <ion-input type="number" placeholder="Enter your phone numbers" formControlName="phoneNumbers"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Date of Birth</ion-label>
+      <ion-input type="date" placeholder="Enter your date of Birth" formControlName="dob"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Email Address</ion-label>
-      <ion-input placeholder="Enter text"></ion-input>
+      <ion-input type="email" placeholder="Enter your email address" formControlName="email"></ion-input>
     </ion-item>
-    <ion-button expand="block">Submit</ion-button>
+    <ion-button expand="block" type="Submit">Submit</ion-button>
   </ion-list>
 </ion-grid>
 </form>
